@@ -67,7 +67,7 @@ Here are some example inputs and outputs from the pipeline:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pharma-nlp.git
+git clone https://github.com/frsperandio/pharma-nlp.git
 cd pharma-nlp
 
 # Create a virtual environment
