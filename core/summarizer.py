@@ -6,11 +6,13 @@ def generate_summary(text, entities, severity, justification):
     load_dotenv(override=True)
     openai_api_key = os.getenv("OPENAI_API_KEY")
 
+    '''
     if openai_api_key:
         print(f"OpenAI API Key exists and begins {openai_api_key[:8]}")
     else:
         print("OpenAI API Key not set")
         return None
+    '''    
 
     system_prompt = (
         "Você é um assistente que gera resumos clínicos com base em relatos de reações adversas a medicamentos.\n"

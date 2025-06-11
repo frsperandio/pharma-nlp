@@ -7,16 +7,21 @@ def classify_severity(text):
     load_dotenv(override=True)
     openai_api_key = os.getenv("OPENAI_API_KEY")
 
+    '''
     if openai_api_key:
         print(f"OpenAI API Key exists and begins {openai_api_key[:8]}")
     else:
         print("OpenAI API Key not set")
         return None, None
+    '''
 
     system_prompt = (
         "Você é um classificador de gravidade de reações adversas a medicamentos.\n"
         "Sua tarefa é classificar o texto fornecido como 'leve', 'moderada' ou 'grave',\n"
         "com uma explicação curta justificando a decisão.\n"
+        "Sempre responda no seguinte formato:\n"
+        "Classificação: <leve|moderada|grave>\n"
+        "Justificativa: <explicação curta>\n\n"
         "Exemplos:\n"
         "Texto: 'O paciente teve dor de cabeça leve e passageira.'\n"
         "Classificação: leve\n"
