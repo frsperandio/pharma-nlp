@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ```bash
 # Run the main script
-python app/main.py
+streamlit run app/main.py
 ```
 
 You may need to configure your environment variables in the `.env` file.
