@@ -1,0 +1,28 @@
+# Ambiente virtual
+venv/
+.env
+
+# Arquivos do Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Checkpoints do Jupyter
+.ipynb_checkpoints
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos temporários
+*.tmp
+*.swp
+*~
+
+# Distribuições e metadados de pacotes
+*.egg-info/
+dist/
+build/
